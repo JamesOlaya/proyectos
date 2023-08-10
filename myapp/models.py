@@ -12,3 +12,4 @@ class Task(models.Model):
     title = models.CharField(max_length=200, help_text='ingrese el título de la tarea.')
     descrption = models.TextField(help_text='ingrese la descripción de la tarea')
     project = models.ForeignKey(Project, on_delete=models.CASCADE)
+    
