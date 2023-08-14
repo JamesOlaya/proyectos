@@ -1,0 +1,13 @@
+{% extends 'layouts/base.html' %}
+
+{% block content %}
+<h1>{{ title }}</h1>
+<!-- jinja Loops-->
+{% for project in projects %}
+
+<article>
+    <h2>{{ project.name }}</h2>
+</article>
+
+{% endfor %}
+{% endblock %}

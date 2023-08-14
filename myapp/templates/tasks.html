@@ -1,0 +1,18 @@
+{% extends 'layouts/base.html' %}
+
+{% block content %}
+<h1>Welcome to django tasks </h1>
+
+{% for task in tasks %}
+
+<article>
+    <h2>Task : {{task.title}}  {% if task.done == False %}  <p>🕑</p>  {% else %}  <p>✅</p>  {% endif %}</h2>
+    
+    <h3>Project: {{task.project.name}}</h3>
+
+    <p>Description: {{ task.descrption }}</p>
+    
+</article>
+
+{% endfor %}
+{% endblock %}
