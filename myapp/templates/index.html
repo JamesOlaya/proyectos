@@ -2,7 +2,13 @@
 
 {% block content %}
 
+{% load static %}
+
 <h1>{{title}}</h1>
+<div id="img_content">
+    <img src="{%static 'images/logo_sena.png'%}" alt="logo">
+</div>
+
 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem sunt possimus, sequi voluptatum fugiat facilis sit quo quis aspernatur veritatis dolorem ipsam, deleniti, totam itaque sed consequatur expedita debitis dolores.</p>
 
 {% endblock %}

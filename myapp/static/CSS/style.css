@@ -1,0 +1,36 @@
+body{
+    height: 100vh;
+    width: 100%;
+
+}
+h1{
+    text-align: center;
+}
+ul{
+    justify-content: space-around;
+    display: flex;
+    width: 100%;
+    height: 3.5rem;
+    background-color:gray ;
+}
+li{
+    padding: .5rem;
+    font-size: 1.5rem;
+    list-style: none;
+    
+}
+a{
+    color: aliceblue;
+    text-decoration: none;
+}
+a:hover{
+    color: beige;
+    font-size: 1.7rem;
+}
+#img_content{
+    display: flex;
+    justify-content: center;
+}
+div{
+    display: flex;
+}

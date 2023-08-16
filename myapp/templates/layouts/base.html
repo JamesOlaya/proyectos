@@ -1,20 +1,36 @@
-<nav>
-    <ul>
-        <li>
-            <a href="/">home</a>
-        </li>
-        <li>
-            <a href="/projects">Projects</a>
-        </li>
-        <li>
-            <a href="/tasks">Tasks</a>
-        </li>
-        <li>
-            <a href="/create_task">Create Task</a>
-        </li>
-    </ul>
-</nav>
-
-{% block content %}
-
-{% endblock %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'CSS/style.css' %}">
+    <title>django projects</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="{% url 'home'%}">home</a>
+            </li>
+            <li>
+                <a href="{% url 'projects'%}">Projects</a>
+            </li>
+            <li>
+                <a href="{% url 'tasks'%}">Tasks</a>
+            </li>
+            <li>
+                <a href="{% url 'create_tasks'%}">Create Task</a>
+            </li>
+            <li>
+                <a href="{% url 'create_projects'%}">create_project</a>
+            </li>
+        </ul>
+    </nav>
+    
+    {% block content %}
+    
+    {% endblock %}
+</body>
+</html>
